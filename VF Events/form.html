@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VF Events</title>
+    <link rel="stylesheet" href="event.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/50a319918a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src=""></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-circle-xmark" onclick = "hideMenu()"></i>
+           <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="event.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+         </div>
+         <i class="fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+    </div>
+        </section>
+        <section class="signup"> 
+            <div class="container">
+                <form action="">
+                    <h2>Event Register Form</h2><br><br>
+                    
+                    <div class="input-box">
+                        <label for="fname">First Name</label>
+                        <input type="text"  placeholder="Enter First Name" name="fname" required>
+                    </div><br>
+                    <div class="input-box">
+                        <label for="lname">Last Name</label>
+                        <input type="text"  placeholder="Enter Last Name" name="lname" required>
+                    </div><br>
+                    <div class="input-box">
+                        <label for="email">E-mail </label>
+                        <input type="text"  placeholder="Enter E-mail" name="email" required>
+                    </div><br>
+                    <div class="input-box">
+                        <label for="pnumber">Phone Number</label>
+                        <input type="text"  placeholder="Enter Phone Number" name="pnumber" required>
+                    </div><br>
+                    <div class="dropdown">
+                        <label for="prices">Select your Price Budget:</label>
+                        <select name="pricetag" id="pricetag">
+                        <option value="100">$100</option>
+                        <option value="65">$65</option>
+                        <option value="78">$78</option>
+                        <option value="28">$28</option>
+                        </select>
+                    </div><br>
+                    <div class="dropdown">
+                        <label for="prices">Select State</label>
+                          <select name="state" id="state">
+                        <option value="abia">Abia</option>
+                          <option value="damawa">Adamawa</option>
+                          <option value="akwaibom">Akwa Ibom</option>
+                        <option value="Rivers state">Rivers state</option>
+                        </div>
+                        </select>
+                    </div><br>
+                    <div class="dropdown">
+                        <label for="prices">City</label>
+                          <select name="city" id="city">
+                        <option value="uyo">Uyo</option>
+                          <option value="portharcourt">Port Harcourt</option>
+                          <option value="enugu">Enugu</option>
+                        <option value="plateu">Plateu</option>
+                        </select>
+                    </div><br>
+                    <div class="input-box">
+                        <label for="postalcode">Postal Code </label>
+                        <input type="text"  placeholder="Enter Postal Code" name="postalcode">
+                    </div><br>
+                    <div class="input-box">
+                        <label for="startdate">Start Date </label>
+                        <input type="date"  placeholder="Enter Start Date of event" name="startdate">
+                    </div><br>
+                    <div class="input-box">
+                        <label for="starttime">Start Time of event </label>
+                        <input type="time"  placeholder="Enter Start time of event" name="starttime">
+                    </div><br>
+                    <div class="input-box">
+                        <label for="enddate">End date </label>
+                        <input type="date"  placeholder="Enter end date of Event " name="enddate">
+                    </div><br>
+                    <div class="input-box">
+                        <label for="endtime">End time of event </label>
+                        <input type="time"  placeholder="Enter end time of Event " name="endtime">
+                    </div><br>
+                    <div class="alert">
+                        <p>By clicking submit, you agree to our <a href="#">Terms,</a><a href="#">privacy policy,
+                        </a> and <a href="#">cookies policy. </a> You may recieve SMS and E-mail notifications from us and can opt at any time.</p>
+                    </div><br>
+                    <div class="button-container">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            </section>
+            
+
+        <!---Footer-->
+<!--<section class="footer">
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="event.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+    </div>
+    <h4>About US</h4>
+    <p>creating a websit is very interesting, also if you can be innovative
+        you will love it o much,</p>
+        <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i>By Web Divas</p>
+        &copy;2023.All Reserved.
+</section>-->
+    <!--javascript for toggle menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

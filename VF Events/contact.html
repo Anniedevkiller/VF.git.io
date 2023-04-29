@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VF Events</title>
+    <link rel="stylesheet" href="event.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/50a319918a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="./img/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-circle-xmark" onclick = "hideMenu()"></i>
+           <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="event.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+         </div>
+         <i class="fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+    </div>
+        </section>
+
+        <h1>Contact us</h1>
+</section>
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.780450483689!2d6.9999549!3d4.807719200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cfc154234b7d%3A0x8cf77843c3198326!2sNUPENG%20House%20Port%20Harcourt!5e0!3m2!1sen!2sng!4v1681463533334!5m2!1sen!2sng" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>no.35 dline, port harcourt</h5>
+                <p>rivers state</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+234 78905435</h5>
+                <p>monady to saturday</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+                <h5>infof@heybs.com</h5>
+                <p>memail us too apply</p>
+            </span>
+        </div>
+    </div>
+    <div class="contact-col">
+        <form action="">
+            <input type="text" placeholder="enter your name" required>
+            <input type="email" placeholder="enetr your email" required>
+            <input type="text" placeholder="enetr your subject" required>
+            <textarea row="8" placeholder="message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">send message</button>
+        </form>
+    </div>
+</section>
+<!---Footer-->
+<section class="footer">
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="event.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+    </div>
+    <h4>About US</h4>
+    <p>creating an events is very interesting, also if you can be innovative
+        you will love it so much,</p>
+        <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i>By Web Divas</p>
+        &copy;2023.All Reserved.
+</section>
+<!--javascript for toggle menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

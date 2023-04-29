@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VF Events</title>
+    <link rel="stylesheet" href="event.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/50a319918a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src=""></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-circle-xmark" onclick = "hideMenu()"></i>
+           <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="event.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+         </div>
+         <i class="fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+    </div>
+        </section>
+    <div class="signupFrm">
+        <form action="" class="form">
+            <marquee><h3 class="title">Sign up to book us!</h3></marquee>
+            <div class="form-group">
+                <label for="Name" class="label">Name</label>        
+                <input type="text" class="input"  name="Firstname" placeholder="Firstname">
+            </div>
+                <div class="form-group">
+                    <label for="Surname" class="label">Surname</label>
+                <input type="text" clas="input" name="Other name"required placeholder="Other name">
+                </div>
+            <div class="form-group">
+                <label for="email">Email address</label> 
+                <input type="text" name="email address"required placeholder="Enter email address">
+            </div>    
+    
+           <div class="form-group">
+               <label for="password">Enter password</label>
+                <input type="password" name="password"required>
+                                   
+           </div>
+    
+            <div class="form-group">
+                <label for="password">Confirm Password</label> <br>
+                <input type="password" name="confirm password" required>
+            </div>
+    
+           <div class="form-group">
+                <label for="Gender">Gender</label> <br>
+                <input type="radio" name="male-female"> Male 
+                <input type="radio" name="male-female"> Female       
+             </label>
+           </div>
+    
+           <div class="form-group">
+                <input type="checkbox" class="check-box"><span>By ticking the checkbox, I agree to the Organization's <a href="#"> Terms</a> and <a href="#">Conditions</a></span>
+           </div>
+    
+           <div>
+                <button type="submit" class="submitBtn">Sign Up</button>
+           </div>
+        
+    
+            <div>
+                <footer>
+                    <p> <p>Are you a returning customer? click <a href="signin.html">here</a> to sign in</p>
+                </footer>
+            </div>
+        </form>
+    
+        </div>
+        <!---Footer-->
+<section class="footer">
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="event.html">EVENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+    </div>
+    <h4>About US</h4>
+    <p>creating a websit is very interesting, also if you can be innovative
+        you will love it o much,</p>
+        <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i>By Web Divas</p>
+        &copy;2023.All Reserved.
+</section>
+        <!--javascript for toggle menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
